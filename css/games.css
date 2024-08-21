@@ -1,0 +1,50 @@
+/* Estilo juego snake */
+#game-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 2% 5%;
+    width: 90%;
+    height: 550px;
+    background: linear-gradient(to bottom right, #a6d2f1, #8fc0a9, #d6e7d4);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.game__title{
+    margin: 1%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+canvas {
+    background-color:#a6d2f1;
+    margin: 1% 2%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.start-button {
+    position: absolute;
+    display: block;
+    margin-top: 2%;
+    bottom: 10px;
+    left: 44%;
+    background: linear-gradient(45deg, #6db3f2, #1e3c72);
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(109, 179, 242, 0.75), 0 4px 15px rgba(30, 60, 114, 0.75);
+}
+
+.start-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 30px rgba(109, 179, 242, 0.75), 0 8px 30px rgba(30, 60, 114, 0.75);
+}

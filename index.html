@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contención emocional</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <img src="images/logo-puce-nuevo.png" class="header__nav--logo" alt="Logo Puce">
+            <div class="header__nav__menu">
+                <a class="header__nav__menu header__nav__menu--link-hover" href="index.html">Informate</a>
+                <a class="header__nav__menu header__nav__menu--link-hover" href="pages/videos.html">Recursos</a>
+                <a class="header__nav__menu header__nav__menu--link-hover" href="pages/juegos.html">Juegos</a>
+                <a class="header__nav__menu header__nav__menu--link-hover" href="#card-container">Contactos</a>
+
+            </div>
+        </nav>
+    </header>
+    <section class="introduction">
+        <div class="introduction__container">
+            <img src="images/Estres.jpg" alt="Estres-image" class="introduction__image">
+        </div>
+        <div class="introduction__content">
+            <h2 class="introduction__title">¿Qué es el estrés laboral?</h2>
+            <p class="introduction__text">
+                El estrés laboral es una respuesta física y emocional que puede ocurrir cuando las demandas del trabajo exceden la capacidad del individuo para manejarlas. Es un problema común que afecta a trabajadores de todas las industrias y niveles jerárquicos.
+            </p>
+        </div>
+    </section>
+
+    <section class="survey">
+        <div class="survey__container">
+            <h2 class="survey__title">Mide tu nivel de estrés</h2>
+            <form id="surveyForm" onsubmit="calculateStress(event)">
+                <div class="survey__questions">
+                    <label class="survey__question">¿Cómo te sientes al pensar en tu trabajo antes de comenzar la jornada laboral?</label>
+                    <div class="survey__options">
+                        <label class="survey__option">
+                            <input type="radio" name="question1" value="0"> Emocionado/a y motivado/a
+                        </label>
+                        <label class="survey__option">
+                            <input type="radio" name="question1" value="1"> Neutral, es parte de la rutina
+                        </label>
+                        <label class="survey__option">
+                            <input type="radio" name="question1" value="2"> Ansioso/a o con una sensación de agotamiento
+                        </label>
+                    </div>
+                </div>
+                <div class="survey__questions">
+                    <label class="survey__question">¿Con qué frecuencia te encuentras pensando en el trabajo fuera del horario laboral?</label>
+                    <div class="survey__options">
+                        <label class="survey__option">
+                            <input type="radio" name="question2" value="0"> Raramente o nunca
+                        </label>
+                        <label class="survey__option">
+                            <input type="radio" name="question2" value="1"> A veces, pero no es constante
+                        </label>
+                        <label class="survey__option">
+                            <input type="radio" name="question2" value="2"> Frecuentemente, y afecta mi capacidad de desconectar
+                        </label>
+                    </div>
+                </div>
+                <div class="survey__questions">
+                    <label class="survey__question">¿Cómo te sientes con respecto al equilibrio entre tu vida laboral y personal?</label>
+                    <div class="survey__options">
+                        <label class="survey__option">
+                            <input type="radio" name="question3" value="0"> Tengo un buen equilibrio y tiempo para ambas cosas
+                        </label>
+                        <label class="survey__option">
+                            <input type="radio" name="question3" value="1"> A veces, el trabajo interfiere, pero generalmente logro equilibrarlo
+                        </label>
+                        <label class="survey__option">
+                            <input type="radio" name="question3" value="2"> Siento que el trabajo domina mi vida y tengo poco tiempo para mí
+                        </label>
+                    </div>
+                </div>
+                <button class="survey__button--hover" type="button" onclick="calculateStress()">Calcular</button>
+            </form>
+            <div id="result"></div>
+            <script src="js/Survey.js"></script>
+            <div id="grid" class="grid-container hidden">
+                <a class="grid-item" href="pages/videos.html">Recursos</a>
+                <a class="grid-item" href="pages/juegos.html">Juega</a>
+            </div>
+    </section>
+
+    <section id="card-container">
+        <h2 class="container__title">Contactos</h2>
+        <div class="card">
+            <img src="images/Persona 1.jpg" alt="Imagen de ejemplo" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Dra. Mariana Ortiz</h3>
+                <p class="card-text">
+                    Especialidad: Psicóloga Organizacional y Coach de Bienestar Laboral
+                    <br>
+                    Teléfono: +593 99 123 4567
+                    <br>
+                    Correo electrónico: mariana.ortiz@bienestarcorp.ec
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/Persona 2.jpg" alt="Imagen de ejemplo" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Carlos Benavides</h3>
+                <p class="card-text">
+                    Especialidad: Terapeuta Ocupacional y Consultor en Salud Mental Laboral
+                    <br>
+                    Teléfono: +593 98 765 4321
+                    <br>
+                    Correo electrónico: carlos.benavides@terapialaboral.ec
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/Persona 3.jpg" alt="Imagen de ejemplo" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Dra. Laura Sánchez</h3>
+                <p class="card-text">
+                    Especialidad: Psicóloga Clínica con Especialización en Estrés y Ansiedad laboral
+                    <br>
+                    Teléfono: +593 97 654 3210
+                    <br>
+                    Correo electrónico: laura.sanchez@saludmental-ec.com
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

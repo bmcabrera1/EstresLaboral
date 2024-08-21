@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>juegos</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/games.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <img src="../images/logo-puce-nuevo.png" class="header__nav--logo" alt="Logo Puce">
+            <div class="header__nav__menu">
+                <a class="header__nav__menu header__nav__menu--link-hover" href="../index.html">Informate</a>
+                <a class="header__nav__menu header__nav__menu--link-hover" href="../pages/videos.html">Recursos</a>
+                <a class="header__nav__menu header__nav__menu--link-hover" href="../pages/juegos.html">Juegos</a>
+
+            </div>
+        </nav>
+    </header>
+
+    <section class="introduction">
+        <div class="introduction__container">
+            <img src="../images/juegos.jpg" alt="Estres-image" class="introduction__image">
+        </div>
+        <div class="introduction__content">
+            <h2 class="introduction__title">¿Como distraerme?</h2>
+            <p class="introduction__text">
+                En medio del ajetreo diario, todos necesitamos un momento para desconectar y relajarnos. El clásico juego de Snake es una excelente manera de hacerlo. Con su diseño simple pero desafiante, te permite concentrarte en algo divertido y dejar de lado las preocupaciones por un rato.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div id="game-container">
+            <h1 class="game__title">Snake Game</h1>
+            <button id="startButton" class="start-button">Start Game</button>
+            <canvas id="gameCanvas"></canvas>
+            <script src="../js/juego1.js"></script>
+        </div>
+</body>
+
+</html>
